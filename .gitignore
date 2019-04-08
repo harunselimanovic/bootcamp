@@ -1,0 +1,13 @@
+/var/*
+/recovery/*
+/.idea/*
+/media/*
+/web/*
+config.php
+/engine/*
+/vendor/*
+/themes/Frontend/Bare/*
+/themes/Frontend/Responsive/*
+/themes/Backend/Bare/*
+/themes/Backend/Responsive/*
+/themes/Backend/ExtJs/*
