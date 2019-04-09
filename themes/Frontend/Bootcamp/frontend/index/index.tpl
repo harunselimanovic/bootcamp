@@ -51,10 +51,15 @@
                             {include file="frontend/index/logo-container.tpl"}
                         {/block}
                         <div class="telephone">
-                            <span><i class="icon--phone"></i>+49 (0) 9571 169 99-20</span>
+                            <div class="phone_text">
+                                <span><i class="icon--phone"></i>+49 (0) 9571 169 99-20</span>
+                                <br>
+                                <span class="under_text">9 - 14 Uhr Montag bis Donnerstag, Freitag geschlossen</span>
+                            </div>
+                          {*  <span><i class="icon--phone"></i>+49 (0) 9571 169 99-20</span>
                             <br>
                             <span class="under_text">9 - 14 Uhr Montag bis Donnerstag, Freitag geschlossen</span>
-                            {* Shop navigation *}
+                           *} {* Shop navigation *}
                             {block name='frontend_index_shop_navigation'}
                                 {include file="frontend/index/shop-navigation.tpl"}
                             {/block}
