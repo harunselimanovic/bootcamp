@@ -3,7 +3,7 @@
 /.idea/*
 /media/*
 /web/*
-config.php
+/config.php
 /engine/*
 /vendor/*
 /themes/Frontend/Bare/*
