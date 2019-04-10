@@ -1,80 +1,145 @@
-.header-main .top-bar {
-  padding-top: 30px;
-}
 .telephone {
-  width: 50%;
-  float: right;
-  font-size: 26px;
-  color: #5d6a7f;
-  font-family: "Montserrat", sans-serif;
-  line-height: 30px;
-  text-align: right;
-  margin-bottom: 30px;
-
-    .under_text {
-      font-size: 15px;
-
-    }
-    .phone_text {
-      margin-bottom: 16px;
-    }
-}
-.icon--phone:before {
-  color: #a4adbb;
-
-}
-
-.header-main {
-
-  .shop--navigation {
-    width: 100%;
-  }
-}
-
-.header-main {
-
-  .logo-main {
-    width: 50%;
-  }
+  display: none;
 }
 
 .shop--navigation {
-
-  .entry--search {
-    width: 50%;
+  .navigation--list{
+    background: #282d33;
+    padding: 5px 0;
   }
-  .entry--cart {
-    background: #83b817;
-    width: 50%;
-  }
-  .cart--display {
+  .navigation--entry {
     display: inline-block;
+    width: 33.3333%;
+    text-align: center;
+    margin: 0;
+
+      .entry--cart{
+        margin: 0;
+      }
+  }
+  .entry--menu-left {
+    top: 4px;
+
+    .btn {
+      color: #a4adbb;
+    }
   }
 }
 
-.navigation--list {
 
-  .entry--cart {
+.header-main {
+  border: none;
+  .logo-main {
+    .logo--shop {
+      width: 97%;
+      .unitize-height(116);
 
-    .cart--link {
-
-      .cart--amount {
-        display: none;
+      .logo--link {
+        .unitize-height(116);
       }
     }
   }
 }
+
 .header-main {
+  .top-bar {
+    display: block;
+    padding-top: 30px;
+  }
+}
 
-  .logo-main {
 
-    .logo--shop {
-      height: 144px;
-    }
-    .logo--link {
-      height: 144px;
-      margin-top: -20px;
+
+
+@media screen and(min-width:@tabletViewportWidth) {
+
+  .telephone {
+    display: block;
+    width: 50%;
+    float: right;
+    font-size: 26px;
+    color: #5d6a7f;
+    font-family: "Montserrat", sans-serif;
+    line-height: 30px;
+    text-align: right;
+    margin-bottom: 30px;
+
+      .under_text {
+        font-size: 15px;
+
+      }
+      .phone_text {
+        margin-bottom: 16px;
+      }
+  }
+  .icon--phone:before {
+    color: #a4adbb;
+
+  }
+
+  .header-main {
+
+    .shop--navigation {
+      width: 100%;
     }
   }
 
+  .header-main {
+
+    .logo-main {
+      width: 50%;
+    }
+  }
+
+  .shop--navigation {
+
+    .entry--search {
+      width: 50%;
+    }
+    .entry--cart {
+      background: #83b817;
+      width: 50%;
+    }
+    .cart--display {
+      display: inline-block;
+    }
+  }
+
+  .navigation--list {
+
+    .entry--cart {
+
+      .cart--link {
+
+        .cart--amount {
+          display: none;
+        }
+      }
+    }
+  }
+  .header-main {
+
+    .logo-main {
+
+      .logo--shop {
+        height: 144px;
+      }
+      .logo--link {
+        height: 144px;
+        margin-top: -20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: @desktopViewportWidth){
+  .header-main {
+    .logo-main {
+      .logo--shop {
+        .logo--link {
+          height: 144px;
+        }
+      }
+    }
+  }
 }

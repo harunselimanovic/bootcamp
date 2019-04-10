@@ -60,15 +60,14 @@
                             <br>
                             <span class="under_text">9 - 14 Uhr Montag bis Donnerstag, Freitag geschlossen</span>
                            *} {* Shop navigation *}
-                            {block name='frontend_index_shop_navigation'}
-                                {include file="frontend/index/shop-navigation.tpl"}
-                            {/block}
-
-                            {block name='frontend_index_container_ajax_cart'}
-                                <div class="container--ajax-cart" data-collapse-cart="true"{if $theme.offcanvasCart} data-displayMode="offcanvas"{/if}></div>
-                            {/block}
                         </div>
+                        {block name='frontend_index_shop_navigation'}
+                            {include file="frontend/index/shop-navigation.tpl"}
+                        {/block}
 
+                        {block name='frontend_index_container_ajax_cart'}
+                            <div class="container--ajax-cart" data-collapse-cart="true"{if $theme.offcanvasCart} data-displayMode="offcanvas"{/if}></div>
+                        {/block}
                     </div>
                 {/block}
             </header>
