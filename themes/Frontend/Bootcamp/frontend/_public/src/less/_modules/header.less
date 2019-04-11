@@ -1,5 +1,6 @@
 .telephone {
   display: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 .shop--navigation {
@@ -31,7 +32,7 @@
   border: none;
   .logo-main {
     .logo--shop {
-      width: 97%;
+      width: 100%;
       .unitize-height(116);
 
       .logo--link {
@@ -55,79 +56,92 @@
 
   .telephone {
     display: block;
-    width: 50%;
+    width: 60%;
     float: right;
     font-size: 26px;
     color: #5d6a7f;
-    font-family: "Montserrat", sans-serif;
     line-height: 30px;
     text-align: right;
     margin-bottom: 30px;
-
+      .upper_text {
+        float:right;
+      }
       .under_text {
         font-size: 15px;
-
       }
       .phone_text {
-        margin-bottom: 16px;
+        margin: -10px 24px 16px 0;
       }
   }
-  .icon--phone:before {
+
+  .fa-phone {
     color: #a4adbb;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    vertical-align: -3px;
 
   }
 
-  .header-main {
+  .navigation--list-wrapper {
+    display:block;
+  }
 
-    .shop--navigation {
-      width: 100%;
+
+  .shop--navigation {
+    width: 100%;
+    .entry--menu-left {
+      position: static;
+      float: left;
+      width: 20%;
+    }
+    .navigation--list {
+      text-align: center;
     }
   }
 
-  .header-main {
 
+  .header-main {
+    .header--navigation {
+      padding: 10px 0 0 0;
+    }
     .logo-main {
       width: 50%;
     }
   }
 
-  .shop--navigation {
-
-    .entry--search {
-      width: 50%;
-    }
-    .entry--cart {
-      background: #83b817;
-      width: 50%;
-    }
-    .cart--display {
-      display: inline-block;
-    }
-  }
-
   .navigation--list {
-
     .entry--cart {
-
       .cart--link {
-
         .cart--amount {
           display: none;
         }
       }
     }
   }
+  .shop--navigation{
+    .entry--search{
+      position: static;
+      float:left;
+      width: 60%;
+    }
+    .entry--cart{
+      position: static;
+      float: left;
+      width: 20%;
+    }
+  }
+
   .header-main {
-
     .logo-main {
-
-      .logo--shop {
-        height: 144px;
-      }
-      .logo--link {
-        height: 144px;
-        margin-top: -20px;
-      }
+      padding: 0;
+      margin: 10px 0 0 24px;
+        .logo--shop {
+         height: 144px;
+        }
+        .logo--link {
+         height: 144px;
+         margin: 0;
+        }
     }
   }
 }
@@ -141,5 +155,8 @@
         }
       }
     }
+  }
+  .navigation--list-wrapper {
+    display:block;
   }
 }

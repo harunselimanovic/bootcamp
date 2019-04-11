@@ -6,7 +6,7 @@
 {block name='frontend_index_html'}
 <html class="no-js" lang="{s name='IndexXmlLang'}{/s}" itemscope="itemscope" itemtype="http://schema.org/WebPage">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 {/block}
 
 {block name='frontend_index_header'}
@@ -54,14 +54,10 @@
                         {/block}
                         <div class="telephone">
                             <div class="phone_text">
-                                <span><i class="icon--phone"></i>+49 (0) 9571 169 99-20</span>
+                                <span class="upper_text"><i class="fas fa-phone"></i></i>+49 (0) 9571 169 99-20</span>
                                 <br>
                                 <span class="under_text">9 - 14 Uhr Montag bis Donnerstag, Freitag geschlossen</span>
                             </div>
-                          {*  <span><i class="icon--phone"></i>+49 (0) 9571 169 99-20</span>
-                            <br>
-                            <span class="under_text">9 - 14 Uhr Montag bis Donnerstag, Freitag geschlossen</span>
-                           *} {* Shop navigation *}
                         </div>
                         {block name='frontend_index_shop_navigation'}
                             {include file="frontend/index/shop-navigation.tpl"}
