@@ -5,6 +5,8 @@
 
 {block name='frontend_index_html'}
 <html class="no-js" lang="{s name='IndexXmlLang'}{/s}" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
 {/block}
 
 {block name='frontend_index_header'}
