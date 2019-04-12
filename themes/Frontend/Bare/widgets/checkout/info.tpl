@@ -14,7 +14,7 @@
 {/block}
 
 {* My account entry *}
-{block name="frontend_index_checkout_actions_my_options"}
+                {block name="frontend_index_checkout_actions_my_options"}
     <li class="navigation--entry entry--account{if {config name=useSltCookie} || $sOneTimeAccount} with-slt{/if}"
         role="menuitem"
         data-offcanvas="true"

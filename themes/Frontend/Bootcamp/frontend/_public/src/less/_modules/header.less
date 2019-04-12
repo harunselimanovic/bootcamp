@@ -2,7 +2,9 @@
   display: none;
   font-family: "Montserrat", sans-serif;
 }
-
+.top-bar--navigation {
+  display: none;
+}
 .shop--navigation {
   .navigation--list{
     background: #282d33;
@@ -121,13 +123,17 @@
   .shop--navigation{
     .entry--search{
       position: static;
-      float:left;
-      width: 60%;
+      float: left;
+      width: 50%;
     }
     .entry--cart{
       position: static;
       float: left;
-      width: 20%;
+      width: 25%;
+    }
+    .entry--menu-left {
+      display: block;
+      width: 25%;
     }
   }
 
@@ -139,24 +145,86 @@
          height: 144px;
         }
         .logo--link {
-         height: 144px;
-         margin: 0;
+          height: 144px;
         }
     }
   }
 }
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+  .top-bar--navigation {
+    display: block;
+  }
 
-@media screen and (min-width: @desktopViewportWidth){
+  .telephone {
+    width: 50%;
+    margin-bottom: 0;
+      .phone_text {
+       margin: 0 42px 16px 0;
+      }
+  }
+
   .header-main {
     .logo-main {
-      .logo--shop {
-        .logo--link {
-          height: 144px;
-        }
+      width: 42%;
+      margin: 0;
+      .logo--link {
+        margin: -22px 0 0 42px;
+
       }
     }
   }
-  .navigation--list-wrapper {
-    display:block;
+  .header-main {
+    .shop--navigation {
+      float:right;
+      width: 57%;
+      padding: 0 42px 16px 0;
+      max-width: 540px;
+      .entry--search{
+        width: 55%;
+        padding: 7px;
+        background-color: #e8ebf1;
+      }
+      .entry--cart{
+        background: #83b817;
+        width: 45%;
+        padding: 7px;
+          .icon--basket {
+            color: white;
+          }
+      }
+      .entry--menu-left {
+        display: none;
+      }
+      .navigation--list{
+        background: transparent;
+      }
+    }
   }
+
+  .entry--search {
+    .main-search--form {
+      .main-search--button {
+        border: 1px solid #dfdfdf;
+      }
+    }
+  }
+
+  .header-main {
+    .top-bar {
+      margin-bottom: 0;
+    }
+    .header--navigation {
+      padding: 0;
+    }
+    .top-bar--navigation {
+      margin-right: 32px;
+    }
+  }
+
+  i.icon--account{
+    display: none;
+  }
+
+
 }
+

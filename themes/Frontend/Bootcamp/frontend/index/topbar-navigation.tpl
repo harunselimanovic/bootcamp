@@ -11,7 +11,28 @@
                     <nav class="top-bar--navigation block" role="menubar">
 
                         {action module=widgets controller=index action=shopMenu}
-
+                        {*My account entry*}
+                        {block name="frontend_index_checkout_actions_account"}
+                            <a href="{url controller='account'}"
+                               title="{"{if $userInfo}{s name="AccountGreetingBefore" namespace="frontend/account/sidebar"}{/s}{$userInfo['firstname']}{s name="AccountGreetingAfter" namespace="frontend/account/sidebar"}{/s} - {/if}{s namespace='frontend/index/checkout_actions' name='IndexLinkAccount'}{/s}"|escape}"
+                               class="btn is--icon-left entry--link account--link{if $userInfo} account--user-loggedin{/if}">
+                                {*izbrisana ikona icon--acount*}
+                                {if $userInfo}
+                                    <span class="account--display navigation--personalized">
+                        <span class="account--display-greeting">
+                            {s name="AccountGreetingBefore" namespace="frontend/account/sidebar"}{/s}
+                            {$userInfo['firstname']}
+                            {s name="AccountGreetingAfter" namespace="frontend/account/sidebar"}{/s}
+                        </span>
+                        {s namespace='frontend/index/checkout_actions' name='IndexLinkAccount'}{/s}
+                    </span>
+                                {else}
+                                    <span class="account--display">
+                        {s namespace='frontend/index/checkout_actions' name='IndexLinkAccount'}{/s}
+                    </span>
+                                {/if}
+                            </a>
+                        {/block}
                         {* Article Compare *}
                         {block name='frontend_index_navigation_inline'}
                             {if {config name="compareShow"}}
